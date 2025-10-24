@@ -1,0 +1,13 @@
+
+scapy
+cryptography
+pyotp
+geoip2
+reportlab
+matplotlib
+typer
+pytest
+python-dotenv
+sqlalchemy
+pandas
+
