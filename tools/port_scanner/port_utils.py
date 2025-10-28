@@ -26,9 +26,9 @@ import re
 from typing import List
 
 
-# ======================================================================
-# Helper: remove duplicates while preserving original order
-# ======================================================================
+
+# Helper function to remove duplicates while preserving original order
+
 def unique_preserve_order(seq: List[str]) -> List[str]:
     """
     Removes duplicate entries from a sequence while preserving order.
@@ -48,9 +48,9 @@ def unique_preserve_order(seq: List[str]) -> List[str]:
     return result
 
 
-# ======================================================================
+
 # parse_ports(port_spec: str) -> List[int]
-# ======================================================================
+
 def parse_ports(port_spec: str | None) -> List[int]:
     """
     Parses a string representing network ports into a sorted list of unique integers.
@@ -114,9 +114,9 @@ def parse_ports(port_spec: str | None) -> List[int]:
     return sorted(final_ports)
 
 
-# ======================================================================
+
 # normalize_targets(target_spec: str | file path) -> List[str]
-# ======================================================================
+
 def normalize_targets(target_spec: str, file_mode: bool = False) -> List[str]:
     """
     Normalizes and validates a list of network targets (hosts or IP addresses).
